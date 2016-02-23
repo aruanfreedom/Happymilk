@@ -1,0 +1,42 @@
+doctype html
+- var aruan = "aruan aygerim"
+- var arr = ["Главная", "преимущества", "отраслевые решения", "услуги", "как мы работаем", "контакты", "8 777 543 13 44"]
+html.no-js(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title HappyMe
+		link(rel="stylesheet" href="../css/style.css")
+	body
+		.top-bar
+			.top-bar-title
+				span(data-responsive-toggle="responsive-menu" data-hide-for="medium")
+				span.menu-icon.dark(data-toggle)
+					strong Site Title
+			#responsive-menu
+				.top-bar-left
+					ul.dropdown.menu(data-dropdown-menu)
+						li
+							a(href="#") One
+						li
+							a(href="#") Two
+						li
+							a(href="#") Three
+				.top-bar-right
+					ul.menu
+						li
+							input(type="search" placeholder="Search")
+							input(type="button").button
+						li
+							button Search
+		.large-8.columns.large-centered
+			h1 Aruanx
+				p.
+					aruan
+		script(src="../bower_components/jquery/dist/jquery.min.js")
+		script(src="../bower_components/what-input/what-input.min.js")
+		script(src="../bower_components/foundation-sites/dist/foundation.min.js")
+		script(src="../bower_components/foundation-sites/js/foundation.responsiveMenu.js")
+		script $(document).foundation();
+		script(src="../js/app.js")

@@ -1,0 +1,91 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.2
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+// Sass utilities
+@import 'util/_util.scss';
+ 
+// Global variables and styles
+@import 'global.scss';
+
+// Components
+@import 'grid/grid.scss';
+@import 'typography/typography.scss';
+@import 'forms/forms.scss';
+@import 'components/visibility.scss';
+@import 'components/float.scss';
+@import 'components/button.scss';
+@import 'components/button-group.scss';
+@import 'components/accordion-menu.scss';
+@import 'components/accordion.scss';
+@import 'components/badge.scss';
+@import 'components/breadcrumbs.scss';
+@import 'components/callout.scss';
+@import 'components/close-button.scss';
+@import 'components/drilldown.scss';
+@import 'components/dropdown-menu.scss';
+@import 'components/dropdown.scss';
+@import 'components/flex-video.scss';
+@import 'components/label.scss';
+@import 'components/media-object.scss';
+@import 'components/menu.scss';
+@import 'components/off-canvas.scss';
+@import 'components/orbit.scss';
+@import 'components/pagination.scss';
+@import 'components/progress-bar.scss';
+@import 'components/reveal.scss';
+@import 'components/slider.scss';
+@import 'components/sticky.scss';
+@import 'components/switch.scss';
+@import 'components/table.scss';
+@import 'components/tabs.scss';
+@import 'components/title-bar.scss';
+@import 'components/top-bar.scss';
+@import 'components/thumbnail.scss';
+@import 'components/tooltip.scss';
+
+@mixin foundation-everything($flex: false) {
+  @include foundation-global-styles;
+  @if not $flex {
+    @include foundation-grid;
+  }
+  @else {
+    @include foundation-flex-grid;
+  }
+  @include foundation-typography;
+  @include foundation-button;
+  @include foundation-forms;
+  @include foundation-visibility-classes;
+  @include foundation-float-classes;
+  @include foundation-accordion;
+  @include foundation-accordion-menu;
+  @include foundation-badge;
+  @include foundation-breadcrumbs;
+  @include foundation-button-group;
+  @include foundation-callout;
+  @include foundation-close-button;
+  @include foundation-drilldown-menu;
+  @include foundation-dropdown;
+  @include foundation-dropdown-menu;
+  @include foundation-flex-video;
+  @include foundation-label;
+  @include foundation-media-object;
+  @include foundation-menu;
+  @include foundation-off-canvas;
+  @include foundation-orbit;
+  @include foundation-pagination;
+  @include foundation-progress-bar;
+  @include foundation-slider;
+  @include foundation-sticky;
+  @include foundation-reveal;
+  @include foundation-switch;
+  @include foundation-table;
+  @include foundation-tabs;
+  @include foundation-thumbnail;
+  @include foundation-title-bar;
+  @include foundation-tooltip;
+  @include foundation-top-bar;
+}

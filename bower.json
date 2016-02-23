@@ -1,0 +1,24 @@
+{
+  "name": "happyme",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation-sites": "~6.1.2"
+  },
+  "authors": [
+    "aruanfreedom <aruanfreedom@outlook.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/aruanfreedom/happyme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/static/bower_components"
+  ]
+}
