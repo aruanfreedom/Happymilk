@@ -4,43 +4,538 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HappyMe</title>
     <link rel="stylesheet" href="../css/style.css">
+    <title>HappyMe</title>
   </head>
   <body>
-    <div class="top-bar">
-      <div class="top-bar-title"><span data-responsive-toggle="responsive-menu" data-hide-for="medium"></span><span data-toggle class="menu-icon dark"><strong>Site Title</strong></span></div>
-      <div id="responsive-menu">
-        <div class="top-bar-left">
-          <ul data-dropdown-menu class="dropdown menu">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-          </ul>
+    <div id="sign" data-reveal class="reveal">
+      <ul id="example-tabs" data-tabs class="tabs">
+        <li class="tabs-title is-active"><a href="#sign-btn" aria-selected="true">Вход</a></li>
+        <li class="tabs-title"><a href="#sign-up-btn" aria-selected="true">Регистрация</a></li>
+      </ul>
+      <div data-tabs-content="example-tabs" class="tabs-content">
+        <div id="sign-btn" class="tabs-panel is-active">
+          <form>
+            <div class="row">
+              <div class="large-12">
+                <label>Email
+                  <input type="email" name="sidn_email">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль
+                  <input type="password" name="sidn_psw">
+                </label>
+              </div>
+              <button type="submit" class="button button-purple">Войти</button>
+              <p class="sign-soc">Войдите использую аккаунт социальных сетей:</p>
+              <div class="text-center"><a href="#"><img src="../img/icons/facebook-sign.png" alt="facebook" class="float-left"></a><a href="#"><img src="../img/icons/vk-sign.png" alt="vk"></a><a href="#"><img src="../img/icons/google-sign.png" alt="google" class="float-right"></a></div>
+            </div>
+          </form>
         </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li>
-              <input type="search" placeholder="Search">
-              <input type="button" class="button">
-            </li>
-            <li>
-              <button>Search</button>
-            </li>
-          </ul>
+        <div id="sign-up-btn" class="tabs-panel">
+          <form>
+            <div class="row">
+              <div class="large-12">
+                <label>Email
+                  <input type="email" name="reg_email">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль
+                  <input type="password" name="reg_psw">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль еще раз
+                  <input type="password" name="reg_psw_again">
+                </label>
+              </div>
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">Я принимаю <a href="#">ползовательское сошлашенеие</a></label><br>
+              <button type="submit" class="button button-purple">Регистрация</button>
+              <p class="sign-soc">Войдите использую аккаунт социальных сетей:</p>
+              <div class="text-center"><a href="#"><img src="../img/icons/facebook-sign.png" alt="facebook" class="float-left"></a><a href="#"><img src="../img/icons/vk-sign.png" alt="vk"></a><a href="#"><img src="../img/icons/google-sign.png" alt="google" class="float-right"></a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div id="sign-up" data-reveal class="reveal">
+      <ul id="example-tabs-2" data-tabs class="tabs">
+        <li class="tabs-title"><a href="#sign-btn" aria-selected="true">Вход</a></li>
+        <li class="tabs-title is-active"><a href="#sign-up-btn" aria-selected="true">Регистрация</a></li>
+      </ul>
+      <div data-tabs-content="example-tabs" class="tabs-content">
+        <div id="sign-btn" class="tabs-panel is-active">
+          <form>
+            <div class="row">
+              <div class="large-12">
+                <label>Email
+                  <input type="email" name="sidn_email">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль
+                  <input type="password" name="sidn_psw">
+                </label>
+              </div>
+              <button type="submit" class="button button-purple">Войти</button>
+              <p class="sign-soc">Войдите использую аккаунт социальных сетей:</p>
+              <div class="text-center"><a href="#"><img src="../img/icons/facebook-sign.png" alt="facebook" class="float-left"></a><a href="#"><img src="../img/icons/vk-sign.png" alt="vk"></a><a href="#"><img src="../img/icons/google-sign.png" alt="google" class="float-right"></a></div>
+            </div>
+          </form>
+        </div>
+        <div id="sign-up-btn" class="tabs-panel">
+          <form>
+            <div class="row">
+              <div class="large-12">
+                <label>Email
+                  <input type="email" name="reg_email">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль
+                  <input type="password" name="reg_psw">
+                </label>
+              </div>
+              <div class="large-12">
+                <label>Пароль еще раз
+                  <input type="password" name="reg_psw_again">
+                </label>
+              </div>
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">Я принимаю <a href="#">ползовательское сошлашенеие</a></label><br>
+              <button type="submit" class="button button-purple">Регистрация</button>
+              <p class="sign-soc">Войдите использую аккаунт социальных сетей:</p>
+              <div class="text-center"><a href="#"><img src="../img/icons/facebook-sign.png" alt="facebook" class="float-left"></a><a href="#"><img src="../img/icons/vk-sign.png" alt="vk"></a><a href="#"><img src="../img/icons/google-sign.png" alt="google" class="float-right"></a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div data-responsive-toggle="happyme" class="title-bar">
+      <button type="button" data-toggle class="menu-icon"></button>
+      <div class="title-bar-title">Happyme</div>
+    </div>
+    <div id="happyme" class="top-bar">
+      <div class="top-bar-left">
+        <ul data-responsive-menu="drilldown medium-dropdown" class="menu vertical medium-horizontal">
+          <li class="menu-text"> <img src="../img/logo2.png" alt="logo"></li>
+        </ul>
+      </div>
+      <div class="top-bar-section text-center">
+        <ul class="center">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">преимущества</a></li>
+          <li><a href="#">отраслевые решения</a></li>
+          <li><a href="#">услуги</a></li>
+          <li><a href="#">как мы работаем</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">8 777 543 13 44</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul data-responsive-menu="drilldown medium-dropdown" class="menu vertical medium-horizontal">
+          <li>
+            <button data-open="sign" class="button radius">Войти</button>
+          </li>
+          <li><a href="#" data-open="sign-up">Регистрация</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns large-centered home">
+        <div class="row">
+          <div class="large-7 columns block-slider padding-left">
+            <div role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" class="orbit">
+              <ul class="orbit-container">
+                <button aria-label="previous" class="orbit-previous"><span class="show-for-sr">Предыдущий</span></button>
+                <button aria-label="next" class="orbit-next"><span class="show-for-sr">Следующий</span></button>
+                <li class="is-active orbit-slide">
+                  <div class="slide1">
+                    <h3>Как женщины "убивают" в мужчинах все мужское</h3><img src="../img/icons/eyes.png" alt="eyes"><span>25</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="slide1">
+                    <h3>Как мужчины "убивают" в женщинах все женское</h3><img src="../img/icons/eyes.png" alt="eyes"><span>15</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="slide1">
+                    <h3>Как люди "убивают" в людях всю человечность</h3><img src="../img/icons/eyes.png" alt="eyes"><span>5</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="large-5 columns block-slider right-padding">
+            <div class="slide1 block-2">
+              <h3>Теперь это реалность: Стойкий маникюр без лампы</h3><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-block">
+            <div class="block-3 text-center grid">
+              <div class="info"><img src="../img/blocks/block-3.png" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 text-center grid">
+              <div class="info"><img src="../img/blocks/block-4.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 text-center grid">
+              <div class="info"><img src="../img/blocks/banner.jpg" alt=""></div>
+            </div>
+            <div class="block-3 pink text-center grid">
+              <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 text-center grid">
+              <div class="info long-height text-left">
+                <h4><span class="purple">Самое</span><span> популяное</span></h4>
+                <div class="all-info">
+                  <div class="blocks"><strong class="topic">Про любовь</strong>
+                    <h2>Топ 5 советов как найти свою вторую половинку</h2>
+                  </div>
+                  <div class="blocks block-2"><strong class="topic">Про любовь</strong>
+                    <h2>Топ 5 советов как найти свою вторую половинку</h2>
+                  </div>
+                  <div class="blocks block-3"><strong class="topic">Про любовь</strong>
+                    <h2>Топ 5 советов как найти свою вторую половинку</h2>
+                  </div>
+                  <div class="blocks block-4"><strong class="topic">Про любовь</strong>
+                    <h2>Топ 5 советов как найти свою вторую половинку</h2>
+                  </div>
+                  <div class="blocks block-5"><strong class="topic">Про любовь</strong>
+                    <h2>Топ 5 советов как найти свою вторую половинку</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-size="3" class="block-3 competitions text-center grid">
+              <h3>Конкурсы</h3>
+              <div class="border"><img src="../img/concurs.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id quidem earum assumenda quisquam ad expedita, repellat eaque quae excepturi!</p>
+                <button class="button button-purple">Участвовать</button>
+                <h4>Лидеры конкурса</h4>
+                <div class="row">
+                  <div class="leaders">
+                    <div class="leader large-3 columns"><img src="../img/leaders/leader1.jpg" alt="leader1" class="round-img">
+                      <p> <b>Жанна</b></p>
+                      <div class="heart"><img src="../img/icons/heart.png" alt="heart-icon"><span>132</span></div>
+                    </div>
+                    <div class="leader large-3 columns"><img src="../img/leaders/leader2.jpg" alt="leader1" class="round-img">
+                      <p> <b>Айгерим</b></p>
+                      <div class="heart"><img src="../img/icons/heart.png" alt="heart-icon"><span>132</span></div>
+                    </div>
+                    <div class="leader large-3 columns"><img src="../img/leaders/leader3.jpg" alt="leader1" class="round-img">
+                      <p> <b>Айару</b></p>
+                      <div class="heart"><img src="../img/icons/heart.png" alt="heart-icon"><span>132</span></div>
+                    </div>
+                    <div class="leader large-3 columns"><img src="../img/leaders/leader4.jpg" alt="leader1" class="round-img">
+                      <p> <b>Наталья</b></p>
+                      <div class="heart"><img src="../img/icons/heart.png" alt="heart-icon"><span>132</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-3 text-center grid">
+              <div class="info long-height text-left blue-block">
+                <h4><span class="blue">Новости</span></h4>
+                <div class="block-3 small-block grid">
+                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                  <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                  <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 pink text-center grid">
+              <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 pink text-center grid">
+              <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 text-center grid">
+              <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+            <div class="block-3 small-block grid">
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+              </div>
+            </div>
+            <div class="block-3 pink text-center grid">
+              <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+                <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+                <hr>
+                <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="large-8 columns large-centered">
-      <h1>Aruanx
-        <p>aruan</p>
-      </h1>
+    <div class="large-12 columns middle">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <h4><span class="purple">Сейчас</span><span> Обсуждает</span></h4>
+            <div class="large-3 columns">
+              <div class="middle-block"><img src="../img/middle/block-middle-1.jpg" alt=""><small>Стиль и мода</small>
+                <p>"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку</p>
+                <p class="comments text-center">24</p>
+              </div>
+            </div>
+            <div class="large-3 columns">
+              <div class="middle-block"><img src="../img/middle/block-middle-2.jpg" alt=""><small>Стиль и мода</small>
+                <p>"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку</p>
+                <p class="comments text-center">65</p>
+              </div>
+            </div>
+            <div class="large-3 columns">
+              <div class="middle-block"><img src="../img/middle/block-middle-3.jpg" alt=""><small>Стиль и мода</small>
+                <p>"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку</p>
+                <p class="comments text-center">21</p>
+              </div>
+            </div>
+            <div class="large-3 columns">
+              <div class="middle-block"><img src="../img/middle/block-middle-4.jpg" alt=""><small>Стиль и мода</small>
+                <p>"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку</p>
+                <p class="comments text-center">73</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="container-block-2">
+        <div class="block-3 pink text-center grid">
+          <div class="info"><img src="../img/blocks/block-4.jpg" alt="">
+            <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+            <hr>
+            <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54				</span></div>
+          </div>
+        </div>
+        <div class="block-3 small-block grid">
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+        </div>
+        <div class="block-3 text-center grid">
+          <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+            <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+            <hr>
+            <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+          </div>
+        </div>
+        <div class="block-3 small-block grid">
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+        </div>
+        <div class="block-3 pink text-center grid">
+          <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+            <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+            <hr>
+            <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
+          </div>
+        </div>
+        <div class="block-3 text-center grid">
+          <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
+            <h3>6 способов сделать понедельник лучшим днем недели!</h3>
+            <hr>
+            <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54		</span></div>
+          </div>
+        </div>
+        <div class="block-3 small-block grid">
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+          <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
+            <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="button button-purple">Показать еще</button>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="top-header">
+            <div class="float-left"><img src="../img/logo2.png" alt="logo">
+              <p>Интернет для женщин</p>
+            </div>
+            <div class="float-right">
+              <ul>
+                <li><a href="#">О сайте</a></li>
+                <li><a href="#">помощь</a></li>
+                <li><a href="#">вакансии</a></li>
+                <li><a href="#">контакты</a></li>
+                <li><a href="#">рекламодателям</a></li>
+                <li><a href="#">правила</a></li>
+                <li><a href="#">правообладателям</a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="bottom-header">
+            <div class="float-left">
+              <p>2009 - 2016. Все права защищены</p>
+            </div>
+            <div class="float-right">
+              <div class="social"><a href="#"><img src="../img/icons/facebook.png" alt="facebook"></a><a href="#"><img src="../img/icons/twitter.png" alt="twitter"></a><a href="#"><img src="../img/icons/smile.png" alt="smile"></a><a href="#"><img src="../img/icons/vk.png" alt="vk"></a></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/what-input/what-input.min.js"></script>
     <script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
-    <script src="../bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.orbit.js"></script>
+    <script src="../js/blocksit.min.js"></script>
     <script>$(document).foundation();</script>
+    <script>
+      $(document).ready(function() {
+      		$('.container-block').BlocksIt({
+      		numOfCol: 4,
+      		offsetX: 13,
+      		offsetY: 10,
+      		blockElement: '.grid'
+      		});
+      	});
+      $(document).ready(function() {
+      	$('.container-block-2').BlocksIt({
+      	numOfCol: 4,
+      	offsetX: 13,
+      	offsetY: 10,
+      	blockElement: '.grid'
+      	});
+      });
+    </script>
     <script src="../js/app.js"></script>
   </body>
 </html>
