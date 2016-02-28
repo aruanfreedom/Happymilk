@@ -1,0 +1,29 @@
+- var menuLinkFooter = ["О сайте", "помощь", "вакансии", "контакты", "рекламодателям", "правила", "правообладателям"]
+block footer
+	footer
+		.row
+			.large-12.columns
+				.top-header
+					.float-left
+						img(src="../img/logo2.png", alt="logo")
+						p Интернет для женщин
+					.float-right
+						ul
+							each menuFooter in menuLinkFooter
+								li
+									a(href="#")= menuFooter
+					.clearfix
+				.bottom-header
+					.float-left
+						p 2009 - 2016. Все права защищены
+					.float-right
+						.social
+							a(href="#")
+								img(src="../img/icons/facebook.png", alt="facebook")
+							a(href="#")
+								img(src="../img/icons/twitter.png", alt="twitter")
+							a(href="#")
+								img(src="../img/icons/smile.png", alt="smile")
+							a(href="#")
+								img(src="../img/icons/vk.png", alt="vk")
+					.clearfix

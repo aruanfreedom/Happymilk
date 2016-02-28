@@ -55,7 +55,7 @@ gulp.task('sass', function() {
 
 //Jade
 gulp.task('jade', function() {
-    return gulp.src('app/*.jade')
+    return gulp.src('app/**/*.jade')
         .pipe(plumber())
         .pipe(jade({
             pretty: true
@@ -84,7 +84,7 @@ gulp.task('clean', ['sass'], function() {
 
 gulp.task('html', function() {
     var assets = useref.assets();
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
         .pipe(assets)
         .pipe(gulpif('js/*.js', uglify()))
         .pipe(gulpif('css/*.css', minifyCss()))
@@ -94,7 +94,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('bower', function() {
-    gulp.src('app/index.html')
+    gulp.src('app/**/*.html')
         .pipe(wiredep({
             directory: "app/bower_components"
         }))
@@ -102,7 +102,7 @@ gulp.task('bower', function() {
 });
 
 gulp.task('hml', function() {
-    gulp.src('app/*.html')
+    gulp.src('app/**/*.html')
         .pipe(connect.reload());
 });
 
@@ -113,10 +113,10 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
     gulp.watch('bower.json', ['bower']);
-    gulp.watch('app/*.html', ['hml']);
+    gulp.watch('app/**/*.html', ['hml']);
     gulp.watch('app/js/*.js', ['js']);
     gulp.watch('app/scss/*.scss', ['sass']);
-    gulp.watch('app/*.jade', ['jade']);
+    gulp.watch('app/**/*.jade', ['jade']);
     //gulp.watch('app/scss/media.scss', ['sass']);
 });
 

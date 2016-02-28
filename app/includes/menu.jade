@@ -1,0 +1,124 @@
+- var menuLink = ["Главная", "преимущества", "отраслевые решения", "услуги", "как мы работаем", "контакты", "8 777 543 13 44"]
+.reveal#sign(data-reveal)
+	ul.tabs#example-tabs(data-tabs)
+		li.tabs-title.is-active
+			a(href="#sign-btn" aria-selected="true") Вход
+		li.tabs-title
+			a(href="#sign-up-btn" aria-selected="true") Регистрация
+	.tabs-content(data-tabs-content="example-tabs")
+		.tabs-panel.is-active#sign-btn
+			form
+				.row
+					.large-12
+						label Email
+							input(type="email" name="sidn_email")
+					.large-12
+						label Пароль
+							input(type="password" name="sidn_psw")
+					button.button.button-purple(type="submit") Войти
+					p.sign-soc Войдите использую аккаунт социальных сетей:
+					.text-center
+						a(href="#")
+							img(src="../img/icons/facebook-sign.png", alt="facebook").float-left
+						a(href="#")
+							img(src="../img/icons/vk-sign.png", alt="vk")
+						a(href="#")
+							img(src="../img/icons/google-sign.png", alt="google").float-right
+		.tabs-panel#sign-up-btn
+			form
+				.row
+					.large-12
+						label Email
+							input(type="email" name="reg_email")
+					.large-12
+						label Пароль
+							input(type="password" name="reg_psw")
+					.large-12
+						label Пароль еще раз
+							input(type="password" name="reg_psw_again")
+					input#checkbox1(type="checkbox")
+					label(for="checkbox1") Я принимаю 
+						a(href="#") ползовательское сошлашенеие
+					br
+					button.button.button-purple(type="submit") Регистрация
+					p.sign-soc Войдите использую аккаунт социальных сетей:
+					.text-center
+						a(href="#")
+							img(src="../img/icons/facebook-sign.png", alt="facebook").float-left
+						a(href="#")
+							img(src="../img/icons/vk-sign.png", alt="vk")
+						a(href="#")
+							img(src="../img/icons/google-sign.png", alt="google").float-right
+	button.close-button(data-close aria-label="Close modal" type="button")
+		span(aria-hidden="true") &times;
+.reveal#sign-up(data-reveal)
+	ul.tabs#example-tabs-2(data-tabs)
+		li.tabs-title
+			a(href="#sign-btn-2" aria-selected="true") Вход
+		li.tabs-title.is-active
+			a(href="#sign-up-btn-2" aria-selected="true") Регистрация
+	.tabs-content(data-tabs-content="example-tabs-2")
+		.tabs-panel#sign-btn-2
+			form
+				.row
+					.large-12
+						label Email
+							input(type="email" name="sidn_email")
+					.large-12
+						label Пароль
+							input(type="password" name="sidn_psw")
+					button.button.button-purple(type="submit") Войти
+					p.sign-soc Войдите использую аккаунт социальных сетей:
+					.text-center
+						a(href="#")
+							img(src="../img/icons/facebook-sign.png", alt="facebook").float-left
+						a(href="#")
+							img(src="../img/icons/vk-sign.png", alt="vk")
+						a(href="#")
+							img(src="../img/icons/google-sign.png", alt="google").float-right
+		.tabs-panel#sign-up-btn-2.is-active
+			form
+				.row
+					.large-12
+						label Email
+							input(type="email" name="reg_email")
+					.large-12
+						label Пароль
+							input(type="password" name="reg_psw")
+					.large-12
+						label Пароль еще раз
+							input(type="password" name="reg_psw_again")
+					input#checkbox1(type="checkbox")
+					label(for="checkbox1") Я принимаю 
+						a(href="#") ползовательское сошлашенеие
+					br
+					button.button.button-purple(type="submit") Регистрация
+					p.sign-soc Войдите использую аккаунт социальных сетей:
+					.text-center
+						a(href="#")
+							img(src="../img/icons/facebook-sign.png", alt="facebook").float-left
+						a(href="#")
+							img(src="../img/icons/vk-sign.png", alt="vk")
+						a(href="#")
+							img(src="../img/icons/google-sign.png", alt="google").float-right
+	button.close-button(data-close aria-label="Close modal" type="button")
+		span(aria-hidden="true") &times;
+.title-bar(data-responsive-toggle="happyme")
+	button.menu-icon(type="button" data-toggle)
+	.title-bar-title Happyme
+.top-bar#happyme
+	.top-bar-left
+		ul.menu.vertical.medium-horizontal(data-responsive-menu="drilldown medium-dropdown")
+			li.menu-text 
+				img(src="../img/logo2.png", alt="logo")
+	.top-bar-section.text-center
+		ul.center
+				each menu in menuLink 
+					li
+						a(href="#")= menu
+	.top-bar-right
+		ul.menu.vertical.medium-horizontal(data-responsive-menu="drilldown medium-dropdown")
+			li
+				button.button.radius(data-open="sign") Войти
+			li
+				a(href="#" data-open="sign-up") Регистрация
