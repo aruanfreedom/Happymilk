@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts/tinos/styles.css"><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <title>HappyMe</title>
   </head>
   <body>
@@ -150,23 +151,41 @@
       <div class="large-12 columns large-centered home">
         <div class="row">
           <div class="large-7 columns block-slider padding-left">
-            <div role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" class="orbit">
+            <div role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false" class="orbit">
               <ul class="orbit-container">
                 <button aria-label="previous" class="orbit-previous"><span class="show-for-sr">Предыдущий</span></button>
                 <button aria-label="next" class="orbit-next"><span class="show-for-sr">Следующий</span></button>
                 <li class="is-active orbit-slide">
-                  <div class="slide1">
-                    <h3>Как женщины "убивают" в мужчинах все мужское</h3><img src="../img/icons/eyes.png" alt="eyes"><span>25</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                  <div class="slide1">											
+                    <div class="img-center"><img src="../img/slide/slide1.jpg" alt="slide" class="orbit-image"></div>
+                    <div class="shadow">
+                      <div class="topic-top"><a href="">Про любовь</a></div>
+                      <div class="topic"><a href="#topic">Как женщины "убивают" в мужчинах все мужское ываывва ывавыаыва ывавыаывавы ывавыаывавы ывавыаывавы</a></div>
+                      <div class="view"><img src="../img/icons/eyes.png" alt="eyes"><span>15</span></div>
+                      <div class="comment"><img src="../img/icons/comments.png" alt="comments"><span>12</span></div>
+                    </div>
                   </div>
                 </li>
                 <li class="orbit-slide">
                   <div class="slide1">
-                    <h3>Как мужчины "убивают" в женщинах все женское</h3><img src="../img/icons/eyes.png" alt="eyes"><span>15</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                    <div class="img-center"><img src="../img/slide/slide1.jpg" alt="slide" class="orbit-image"></div>
+                    <div class="shadow">
+                      <div class="topic-top"><a href="">Про любовь</a></div>
+                      <div class="topic"><a href="#topic">Как мужчины "убивают" в женщинах все женское</a></div>
+                      <div class="view"><img src="../img/icons/eyes.png" alt="eyes"><span>15</span></div>
+                      <div class="comment"><img src="../img/icons/comments.png" alt="comments"><span>12</span></div>
+                    </div>
                   </div>
                 </li>
                 <li class="orbit-slide">
                   <div class="slide1">
-                    <h3>Как люди "убивают" в людях всю человечность</h3><img src="../img/icons/eyes.png" alt="eyes"><span>5</span><img src="../img/icons/comments.png" alt="comments"><span>12</span>
+                    <div class="img-center"><img src="../img/slide/slide1.jpg" alt="slide" class="orbit-image"></div>
+                    <div class="shadow">
+                      <div class="topic-top"><a href="">Про любовь</a></div>
+                      <div class="topic"><a href="#topic">Как люди "убивают" в людях все людьское</a></div>
+                      <div class="view"><img src="../img/icons/eyes.png" alt="eyes"><span>15</span></div>
+                      <div class="comment"><img src="../img/icons/comments.png" alt="comments"><span>12</span></div>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -174,7 +193,13 @@
           </div>
           <div class="large-5 columns block-slider right-padding">
             <div class="slide1 block-2">
-              <h3>Теперь это реалность: Стойкий маникюр без лампы</h3><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span>
+              <div class="img-center"><img src="../img/blocks/block-2.jpg" alt="slide" class="orbit-image"></div>
+              <div class="shadow">
+                <div class="topic-top"><a href="">Про любовь</a></div>
+                <div class="topic"><a href="#topic">Как люди "убивают" в людях все людьское</a></div>
+                <div class="view"><img src="../img/icons/eyes.png" alt="eyes"><span>15</span></div>
+                <div class="comment"><img src="../img/icons/comments.png" alt="comments"><span>12</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -515,34 +540,7 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/what-input/what-input.min.js"></script>
     <script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
-    <script src="../js/blocksit.min.js"></script>
     <script>$(document).foundation();</script>
-    <script>
-      $(document).ready(function() {
-      		$('.container-block').BlocksIt({
-      		numOfCol: 4,
-      		offsetX: 13,
-      		offsetY: 10,
-      		blockElement: '.grid'
-      		});
-      	});
-      $(document).ready(function() {
-      	$('.container-block-2').BlocksIt({
-      	numOfCol: 4,
-      	offsetX: 13,
-      	offsetY: 10,
-      	blockElement: '.grid'
-      	});
-      });
-      $(document).ready(function() {
-      	$('.container-block-3').BlocksIt({
-      		numOfCol: 3,
-      		offsetX: 13,
-      		offsetY: 10,
-      		blockElement: '.grid'
-      		});
-      });
-    </script>
     <script src="../js/app.js"></script>
   </body>
 </html>

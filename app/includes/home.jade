@@ -1,12 +1,14 @@
 - var br = '<br />'
 doctype html
-html.no-js(lang="en")
+html.no-js(lang="ru")
 	head
 		meta(charset="utf-8")
 		meta(http-equiv="x-ua-compatible" content="ie=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		block style
 			link(rel="stylesheet" href="../css/style.css")
+			link(rel="stylesheet" href="../css/fonts/tinos/styles.css")
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		block title
 			title HappyMe
 	body
@@ -16,33 +18,57 @@ html.no-js(lang="en")
 				.large-12.columns.large-centered.home
 					.row
 						.large-7.columns.block-slider.padding-left
-							.orbit(role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;")
+							.orbit(role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false")
 								ul.orbit-container
 									button.orbit-previous(aria-label="previous")
 										span.show-for-sr Предыдущий
 									button.orbit-next(aria-label="next")
 										span.show-for-sr Следующий
 									li.is-active.orbit-slide
-										div.slide1
-											h3 Как женщины "убивают" в мужчинах все мужское
-											img(src="../img/icons/eyes.png", alt="eyes")
-											span 25
-											img(src="../img/icons/comments.png", alt="comments")
-											span 12
+										div.slide1 											
+											.img-center
+													img(src="../img/slide/slide1.jpg", alt="slide").orbit-image
+											.shadow
+												.topic-top
+													a(href="") Про любовь
+												.topic
+													a(href="#topic") Как женщины "убивают" в мужчинах все мужское ываывва ывавыаыва ывавыаывавы ывавыаывавы ывавыаывавы
+												.view
+														img(src="../img/icons/eyes.png", alt="eyes")
+														span 15
+												.comment
+														img(src="../img/icons/comments.png", alt="comments")
+														span 12
 									li.orbit-slide
 										div.slide1
-											h3 Как мужчины "убивают" в женщинах все женское
-											img(src="../img/icons/eyes.png", alt="eyes")
-											span 15
-											img(src="../img/icons/comments.png", alt="comments")
-											span 12
+											.img-center
+													img(src="../img/slide/slide1.jpg", alt="slide").orbit-image
+											.shadow
+												.topic-top
+													a(href="") Про любовь
+												.topic
+													a(href="#topic") Как мужчины "убивают" в женщинах все женское
+												.view
+														img(src="../img/icons/eyes.png", alt="eyes")
+														span 15
+												.comment
+														img(src="../img/icons/comments.png", alt="comments")
+														span 12
 									li.orbit-slide
 										div.slide1
-											h3 Как люди "убивают" в людях всю человечность
-											img(src="../img/icons/eyes.png", alt="eyes")
-											span 5
-											img(src="../img/icons/comments.png", alt="comments")
-											span 12
+											.img-center
+													img(src="../img/slide/slide1.jpg", alt="slide").orbit-image
+											.shadow
+												.topic-top
+													a(href="") Про любовь
+												.topic
+													a(href="#topic") Как люди "убивают" в людях все людьское
+												.view
+														img(src="../img/icons/eyes.png", alt="eyes")
+														span 15
+												.comment
+														img(src="../img/icons/comments.png", alt="comments")
+														span 12
 								//- nav.orbit-bullets
 								//- 	button.is-active(data-slide="0")
 								//- 		span.show-for-sr Первый слайд
@@ -52,11 +78,19 @@ html.no-js(lang="en")
 								//- 		span.show-for-sr Третьи слайд
 						.large-5.columns.block-slider.right-padding
 							div.slide1.block-2
-								h3 Теперь это реалность: Стойкий маникюр без лампы
-								img(src="../img/icons/eyes.png", alt="eyes")
-								span 74
-								img(src="../img/icons/comments.png", alt="comments")
-								span 54
+								.img-center
+									img(src="../img/blocks/block-2.jpg", alt="slide").orbit-image
+								.shadow
+									.topic-top
+										a(href="") Про любовь
+									.topic
+										a(href="#topic") Как люди "убивают" в людях все людьское
+									.view
+										img(src="../img/icons/eyes.png", alt="eyes")
+										span 15
+									.comment
+										img(src="../img/icons/comments.png", alt="comments")
+										span 12
 					.row
 						.container-block
 							.block-3.text-center.grid
