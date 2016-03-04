@@ -16,14 +16,14 @@ var gulp = require("gulp"),
     plumber = require('gulp-plumber');
 
 //autoprefixer
-gulp.task('autoprefixer', function() {
-    return gulp.src('app/scss/style.scss')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist-css'));
-});
+// gulp.task('autoprefixer', function() {
+//     return gulp.src('app/css/style.css')
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3'],
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest('dist-css'));
+// });
 
 //server connect
 gulp.task('connect', function() {
@@ -121,4 +121,4 @@ gulp.task('watch', function() {
 });
 
 //default
-gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade']);
+gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade', 'autoprefixer']);
