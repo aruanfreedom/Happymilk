@@ -3,11 +3,21 @@ block script
 	//- bower:js
 	script(src="../bower_components/jquery/dist/jquery.min.js")
 	script(src="../bower_components/what-input/what-input.min.js")
+	//- script(src="../bower_components/foundation-sites/js/foundation.core.js")
 	script(src="../bower_components/foundation-sites/dist/foundation.min.js")
 	//- endbower
 	//- endbuild
 	//- script(src="../js/blocksit.min.js")
-	script $(document).foundation();
+	script $(document).foundation({
+		  orbit: {
+		    animation: 'fade',
+		    timer_speed: 8000,
+		    pause_on_hover: true,
+		    animation_speed: 1000,
+		    navigation_arrows: false,
+		    bullets: false
+		  }
+	});
 	//- script.
 	//- 	$(document).ready(function() {
 	//- 			$('.container-block').BlocksIt({
