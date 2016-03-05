@@ -20,5 +20,8 @@
     "test",
     "tests",
     "app/static/bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "motion-ui": "~1.2.2"
+  }
 }

@@ -2,22 +2,39 @@ block script
 	//- build:js ../js/vendor.js
 	//- bower:js
 	script(src="../bower_components/jquery/dist/jquery.min.js")
+	script(src="../bower_components/foundation-sites/js/foundation.core.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.mediaQuery.js")
+	script(src="../bower_components/foundation-sites/js/foundation.accordionMenu.js")
+	script(src="../bower_components/foundation-sites/js/foundation.accordion.js")
+	script(src="../bower_components/foundation-sites/js/foundation.drilldown.js")
+	script(src="../bower_components/foundation-sites/js/foundation.dropdown.js")
+	script(src="../bower_components/foundation-sites/js/foundation.dropdownMenu.js")
+	script(src="../bower_components/foundation-sites/js/foundation.equalizer.js")
+	script(src="../bower_components/foundation-sites/js/foundation.interchange.js")
+	script(src="../bower_components/foundation-sites/js/foundation.magellan.js")
+	script(src="../bower_components/foundation-sites/js/foundation.offcanvas.js")
+	script(src="../bower_components/foundation-sites/js/foundation.reveal.js")
+	script(src="../bower_components/foundation-sites/js/foundation.slider.js")
+	script(src="../bower_components/foundation-sites/js/foundation.sticky.js")
+	script(src="../bower_components/foundation-sites/js/foundation.tabs.js")
+	script(src="../bower_components/foundation-sites/js/foundation.toggler.js")
+	script(src="../bower_components/foundation-sites/js/foundation.tooltip.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.box.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.nest.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.triggers.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.motion.js")
+	script(src="../bower_components/foundation-sites/js/foundation.responsiveToggle.js")
+	script(src="../bower_components/foundation-sites/js/foundation.responsiveMenu.js")
+	script(src="../bower_components/foundation-sites/js/foundation.orbit.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.keyboard.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js")
+	script(src="../bower_components/foundation-sites/js/foundation.util.touch.js")
+	script(src="../bower_components/motion-ui/motion-ui.js")
 	script(src="../bower_components/what-input/what-input.min.js")
-	//- script(src="../bower_components/foundation-sites/js/foundation.core.js")
-	script(src="../bower_components/foundation-sites/dist/foundation.min.js")
 	//- endbower
 	//- endbuild
 	//- script(src="../js/blocksit.min.js")
-	script $(document).foundation({
-		  orbit: {
-		    animation: 'fade',
-		    timer_speed: 8000,
-		    pause_on_hover: true,
-		    animation_speed: 1000,
-		    navigation_arrows: false,
-		    bullets: false
-		  }
-	});
+	script $(document).foundation();
 	//- script.
 	//- 	$(document).ready(function() {
 	//- 			$('.container-block').BlocksIt({

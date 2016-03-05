@@ -5,7 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/fonts/tinos/styles.css"><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/fonts/tinos/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css">
     <title>Главная </title>
   </head>
   <body>
@@ -151,10 +153,10 @@
       <div class="large-12 columns large-centered home">
         <div class="row">
           <div class="large-7 columns block-slider padding-left">
-            <div role="region" aria-label="Favorite Space Pictures" data-use-m-u-i="false" data-slide-speed="500" data-options="slideSpeed:250;" data-orbit class="orbit">
+            <div role="region" data-orbit data-use-m-u-i="true" class="orbit">
               <ul class="orbit-container">
-                <button aria-label="previous" class="orbit-previous"><span class="show-for-sr">Предыдущий</span></button>
-                <button aria-label="next" class="orbit-next"><span class="show-for-sr">Следующий</span></button>
+                <button class="orbit-previous"><span class="show-for-sr">Предыдущий</span></button>
+                <button class="orbit-next"><span class="show-for-sr">Следующий</span></button>
                 <li class="is-active orbit-slide">
                   <div class="slide1">
                     <div class="img-center"><img src="../img/slide/slide1.jpg" alt="slide" class="orbit-image"></div>
@@ -205,22 +207,11 @@
         </div>
         <div class="row">
           <div class="container-block">
-            <div class="large-3 columns block-3 text-center grid">
+            <div class="block-3 text-center grid">
               <div class="info"><img src="../img/blocks/block-3.png" alt="">
                 <h3>6 способов сделать понедельник лучшим днем недели!</h3>
                 <hr>
                 <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
-              </div>
-            </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
               </div>
             </div>
             <div class="block-3 text-center grid">
@@ -230,9 +221,6 @@
                 <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
               </div>
             </div>
-            <div class="block-3 text-center grid">
-              <div class="info"><img src="../img/blocks/banner.jpg" alt=""></div>
-            </div>
             <div class="block-3 pink text-center grid">
               <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
                 <h3>6 способов сделать понедельник лучшим днем недели!</h3>
@@ -240,27 +228,10 @@
                 <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
               </div>
             </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-            </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
+          </div>
+          <div class="right-sidebar">
+            <div class="block-3 text-center grid">
+              <div class="info"><img src="../img/blocks/banner.jpg" alt=""></div>
             </div>
             <div class="block-3 text-center grid">
               <div class="info long-height text-left">
@@ -284,7 +255,9 @@
                 </div>
               </div>
             </div>
-            <div data-size="3" class="block-3 competitions text-center grid">
+          </div>
+          <div class="container-block competitions">
+            <div class="block-3 text-center">
               <h3>Конкурсы</h3>
               <div class="border"><img src="../img/concurs.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id quidem earum assumenda quisquam ad expedita, repellat eaque quae excepturi!</p>
@@ -312,43 +285,6 @@
                 </div>
               </div>
             </div>
-            <div class="block-3 text-center grid">
-              <div class="info long-height text-left blue-block">
-                <h4><span class="blue">Новости</span></h4>
-                <div class="block-3 small-block grid">
-                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                  <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                  <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                  <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                    <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-            </div>
             <div class="block-3 pink text-center grid">
               <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
                 <h3>6 способов сделать понедельник лучшим днем недели!</h3>
@@ -363,33 +299,11 @@
                 <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
               </div>
             </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-            </div>
             <div class="block-3 text-center grid">
               <div class="info"><img src="../img/blocks/block-5.jpg" alt="">
                 <h3>6 способов сделать понедельник лучшим днем недели!</h3>
                 <hr>
                 <div class="info-views"><img src="../img/icons/eyes.png" alt="eyes"><span>74</span><img src="../img/icons/comments.png" alt="comments"><span>54</span></div>
-              </div>
-            </div>
-            <div class="block-3 small-block grid">
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
-              </div>
-              <div class="info clearfix last"><img src="../img/blocks/small-block.jpg" alt="small-block" class="float-left">
-                <h3 class="float-left">Модные метафоры: <br /> Победа над собой</h3>
               </div>
             </div>
             <div class="block-3 pink text-center grid">
@@ -538,8 +452,35 @@
       </div>
     </footer>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.core.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.accordionMenu.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.accordion.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.drilldown.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.equalizer.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.interchange.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.magellan.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.offcanvas.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.reveal.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.slider.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.sticky.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.tabs.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.box.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.nest.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.orbit.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js"></script>
+    <script src="../bower_components/foundation-sites/js/foundation.util.touch.js"></script>
+    <script src="../bower_components/motion-ui/motion-ui.js"></script>
     <script src="../bower_components/what-input/what-input.min.js"></script>
-    <script src="../bower_components/foundation-sites/dist/foundation.min.js"></script>
     <script>$(document).foundation();</script>
     <script src="../js/app.js"></script>
   </body>

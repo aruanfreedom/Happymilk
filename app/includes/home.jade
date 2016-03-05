@@ -8,7 +8,8 @@ html.no-js(lang="ru")
 		block style
 			link(rel="stylesheet" href="../css/style.css")
 			link(rel="stylesheet" href="../css/fonts/tinos/styles.css")
-			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+			link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+			link(href='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css')
 		block title
 			title HappyMe
 	body
@@ -18,11 +19,11 @@ html.no-js(lang="ru")
 				.large-12.columns.large-centered.home
 					.row
 						.large-7.columns.block-slider.padding-left
-							.orbit(role="region" aria-label="Favorite Space Pictures" data-orbit )
+							.orbit(role="region" data-orbit data-use-m-u-i="true")
 								ul.orbit-container
-									button.orbit-previous(aria-label="previous")
+									button.orbit-previous
 										span.show-for-sr Предыдущий
-									button.orbit-next(aria-label="next")
+									button.orbit-next
 										span.show-for-sr Следующий
 									li.is-active.orbit-slide
 										div.slide1
@@ -69,13 +70,6 @@ html.no-js(lang="ru")
 												.comment
 														img(src="../img/icons/comments.png", alt="comments")
 														span 12
-								//- nav.orbit-bullets
-								//- 	button.is-active(data-slide="0")
-								//- 		span.show-for-sr Первый слайд
-								//- 	button(data-slide="1")
-								//- 		span.show-for-sr Второй слайд
-								//- 	button(data-slide="2")
-								//- 		span.show-for-sr Третьи слайд
 						.large-5.columns.block-slider.right-padding
 							div.slide1.block-2
 								.img-center
@@ -93,7 +87,7 @@ html.no-js(lang="ru")
 										span 12
 					.row
 						.container-block
-							.large-3.columns.block-3.text-center.grid
+							.block-3.text-center.grid
 								.info
 									img(src="../img/blocks/block-3.png", alt="")
 									h3 6 способов сделать понедельник лучшим днем недели!
@@ -103,7 +97,6 @@ html.no-js(lang="ru")
 										span 74
 										img(src="../img/icons/comments.png", alt="comments")
 										span 54
-							include small-block.jade
 							.block-3.text-center.grid
 								.info
 									img(src="../img/blocks/block-4.jpg", alt="")
@@ -114,9 +107,6 @@ html.no-js(lang="ru")
 										span 74
 										img(src="../img/icons/comments.png", alt="comments")
 										span 54
-							.block-3.text-center.grid
-								.info
-									img(src="../img/blocks/banner.jpg", alt="")
 							.block-3.pink.text-center.grid
 								.info
 									img(src="../img/blocks/block-5.jpg", alt="")
@@ -127,10 +117,13 @@ html.no-js(lang="ru")
 										span 74
 										img(src="../img/icons/comments.png", alt="comments")
 										span 54
-							include small-block.jade
-							include small-block.jade  
+						.right-sidebar
+							.block-3.text-center.grid
+									.info
+										img(src="../img/blocks/banner.jpg", alt="")
 							include reklama.jade
-							.block-3.competitions.text-center.grid(data-size="3")
+						.container-block.competitions
+							.block-3.text-center
 								h3 Конкурсы
 								.border
 									img(src="../img/concurs.png", alt="")
@@ -168,31 +161,6 @@ html.no-js(lang="ru")
 												.heart
 													img(src="../img/icons/heart.png", alt="heart-icon")
 													span 132
-							.block-3.text-center.grid
-								.info.long-height.text-left.blue-block
-									h4
-										span.blue Новости
-									.block-3.small-block.grid
-										.info.clearfix
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-										.info.clearfix
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-										.info.clearfix.last
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-										.info.clearfix
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-										.info.clearfix
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-										.info.clearfix.last
-											img.float-left(src="../img/blocks/small-block.jpg", alt="small-block")
-											h3.float-left Модные метафоры: !{br} Победа над собой
-									.clearfix
-							include small-block.jade
 							.block-3.pink.text-center.grid
 								.info
 									img(src="../img/blocks/block-5.jpg", alt="")
@@ -213,7 +181,6 @@ html.no-js(lang="ru")
 										span 74
 										img(src="../img/icons/comments.png", alt="comments")
 										span 54
-							include small-block.jade
 
 							.block-3.text-center.grid
 								.info
@@ -225,7 +192,6 @@ html.no-js(lang="ru")
 										span 74
 										img(src="../img/icons/comments.png", alt="comments")
 										span 54
-							include small-block.jade
 							.block-3.pink.text-center.grid
 								.info
 									img(src="../img/blocks/block-5.jpg", alt="")
