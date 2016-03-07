@@ -1,47 +1,33 @@
 .row
-	.container-block-2
-		.block-3.pink.text-center.grid
-			.info
-				img(src="../img/blocks/block-4.jpg", alt="")
-				h3 6 способов сделать понедельник лучшим днем недели!
-				hr
-				.info-views
-					img(src="../img/icons/eyes.png", alt="eyes")
-					span 74
-					img(src="../img/icons/comments.png", alt="comments")
-					span 54				
-		include small-block.jade
-		.block-3.text-center.grid
-			.info
-				img(src="../img/blocks/block-5.jpg", alt="")
-				h3 6 способов сделать понедельник лучшим днем недели!
-				hr
-				.info-views
-					img(src="../img/icons/eyes.png", alt="eyes")
-					span 74
-					img(src="../img/icons/comments.png", alt="comments")
-					span 54
-		include small-block.jade		
-		.block-3.pink.text-center.grid
-			.info
-				img(src="../img/blocks/block-5.jpg", alt="")
-				h3 6 способов сделать понедельник лучшим днем недели!
-				hr
-				.info-views
-					img(src="../img/icons/eyes.png", alt="eyes")
-					span 74
-					img(src="../img/icons/comments.png", alt="comments")
-					span 54
-		.block-3.text-center.grid
-			.info
-				img(src="../img/blocks/block-5.jpg", alt="")
-				h3 6 способов сделать понедельник лучшим днем недели!
-				hr
-				.info-views
-					img(src="../img/icons/eyes.png", alt="eyes")
-					span 74
-					img(src="../img/icons/comments.png", alt="comments")
-					span 54		
-		include small-block.jade
-	.text-center
-		button.button.button-purple Показать еще
+	.container-block4
+		- for (var x = 0; x < 8; x++)
+			-if (x % 2)
+				.block-3.text-center.grid
+					.topic-top
+						a(href="#love") Про любовь
+					.info
+						.img-center
+							img(src="../img/blocks/block-3.png", alt="")
+						a 6 способов сделать понедельник лучшим днем недели!
+						hr
+						.info-views
+							img(src="../img/icons/eyes.png", alt="eyes")
+							span 74
+							img(src="../img/icons/comments.png", alt="comments")
+							span 54
+			-else 
+				.block-3.pink.text-center.grid
+					.topic-top
+						a(href="#love") Про любовь
+					.info
+						.img-center
+							img(src="../img/blocks/block-5.jpg", alt="")
+						a 6 способов сделать понедельник лучшим днем недели!
+						hr
+						.info-views
+							img(src="../img/icons/eyes.png", alt="eyes")
+							span 74
+							img(src="../img/icons/comments.png", alt="comments")
+							span 54
+.text-center
+	button.button.button-purple Показать еще

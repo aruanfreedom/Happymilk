@@ -10,7 +10,6 @@ var gulp = require("gulp"),
     uncss = require('gulp-uncss'),
     connect = require('gulp-connect'),
     livereload = require('gulp-livereload'),
-    autoprefixer = require('gulp-autoprefixer'),
     clean = require('gulp-clean'),
     jade = require('gulp-jade'),
     plumber = require('gulp-plumber');
@@ -35,10 +34,10 @@ gulp.task('connect', function() {
 });
 
 //Autoprefix
-gulp.task('autoprefixer', function() {
-    gulp.src('app/css/*.css')
-        .pipe(autoprefixer());
-});
+// gulp.task('autoprefixer', function() {
+//     gulp.src('app/css/*.css')
+//         .pipe(autoprefixer());
+// });
 
 gulp.task('sass', function() {
     gulp.src('app/scss/*.scss')
@@ -47,9 +46,6 @@ gulp.task('sass', function() {
             outputStyle: 'compressed'
             }))
         .pipe(gulp.dest('app/css/'))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'ie >= 9']
-        }))
         .pipe(connect.reload());
 });
 
@@ -61,8 +57,7 @@ gulp.task('jade', function() {
             pretty: true
         }))
         
-        .pipe(gulp.dest("app/build/"))
-        .pipe(connect.reload());
+        .pipe(gulp.dest("app/build/"));
 });
 
 gulp.task('uncss', function() {
@@ -121,4 +116,4 @@ gulp.task('watch', function() {
 });
 
 //default
-gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade', 'autoprefixer']);
+gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade']);
