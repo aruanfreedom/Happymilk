@@ -1,6 +1,5 @@
 block script
-	//- build:js ../js/vendor.js
-	//- bower:js
+	// build:js js/vendor.js
 	script(src="../bower_components/jquery/dist/jquery.min.js")
 	script(src="../bower_components/foundation-sites/js/foundation.core.js")
 	script(src="../bower_components/foundation-sites/js/foundation.util.mediaQuery.js")
@@ -31,33 +30,6 @@ block script
 	script(src="../bower_components/foundation-sites/js/foundation.util.touch.js")
 	script(src="../bower_components/motion-ui/motion-ui.js")
 	script(src="../bower_components/what-input/what-input.min.js")
-	//- endbower
-	//- endbuild
-	//- script(src="../js/blocksit.min.js")
+	// endbuild
 	script $(document).foundation();
-	//- script.
-	//- 	$(document).ready(function() {
-	//- 			$('.container-block').BlocksIt({
-	//- 			numOfCol: 4,
-	//- 			offsetX: 13,
-	//- 			offsetY: 10,
-	//- 			blockElement: '.grid'
-	//- 			});
-	//- 		});
-	//- 	$(document).ready(function() {
-	//- 		$('.container-block-2').BlocksIt({
-	//- 		numOfCol: 4,
-	//- 		offsetX: 13,
-	//- 		offsetY: 10,
-	//- 		blockElement: '.grid'
-	//- 		});
-	//- 	});
-	//- 	$(document).ready(function() {
-	//- 		$('.container-block-3').BlocksIt({
-	//- 			numOfCol: 3,
-	//- 			offsetX: 13,
-	//- 			offsetY: 10,
-	//- 			blockElement: '.grid'
-	//- 			});
-	//- 	});
-	script(src="../js/app.js")
+	script(src="js/app.js")

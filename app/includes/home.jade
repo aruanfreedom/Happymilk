@@ -6,8 +6,8 @@ html.no-js(lang="ru")
 		meta(http-equiv="x-ua-compatible" content="ie=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		block style
-			link(rel="stylesheet" href="../css/style.css")
-			link(rel="stylesheet" href="../css/fonts/tinos/styles.css")
+			link(rel="stylesheet" href="css/style.css")
+			link(rel="stylesheet" href="css/fonts/tinos/styles.css")
 			link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
 			link(href='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css')
 		block title
@@ -16,9 +16,9 @@ html.no-js(lang="ru")
 		include menu.jade
 		block content
 			.row
-				.large-12.columns.large-centered.home
+				.large-12.medium-12.columns.large-centered.home
 					.row
-						.large-7.columns.block-slider.padding-left
+						.large-7.medium-7.columns.block-slider.padding-left
 							.orbit(role="region" data-orbit data-use-m-u-i="true")
 								ul.orbit-container
 									button.orbit-previous
@@ -28,212 +28,245 @@ html.no-js(lang="ru")
 									li.is-active.orbit-slide
 										div.slide1
 											.img-center
-													img(src="../img/slide/slide1.jpg", alt="slide").orbit-image
+													img(src="img/slide/slide1.jpg", alt="slide").orbit-image
 											.shadow
 												.topic-top
 													a(href="") Про любовь
 												.topic
 													a(href="#topic") Как женщины "убивают" в мужчинах все мужское ываывва ывавыаыва ывавыаывавы ывавыаывавы ывавыаывавы
 												.view
-														img(src="../img/icons/eyes.png", alt="eyes")
+														img(src="img/icons/eyes.png", alt="eyes")
 														span 15
 												.comment
-														img(src="../img/icons/comments.png", alt="comments")
+														img(src="img/icons/comments.png", alt="comments")
 														span 12
 									li.orbit-slide
 										div.slide1
 											.img-center
-													img(src="../img/blocks/block-2.jpg", alt="slide").orbit-image
+													img(src="img/blocks/block-2.jpg", alt="slide").orbit-image
 											.shadow
 												.topic-top
-													a(href="") Про любовь
+													a(href="#love") Про любовь
 												.topic
 													a(href="#topic") Как мужчины "убивают" в женщинах все женское
 												.view
-														img(src="../img/icons/eyes.png", alt="eyes")
+														img(src="img/icons/eyes.png", alt="eyes")
 														span 15
 												.comment
-														img(src="../img/icons/comments.png", alt="comments")
+														img(src="img/icons/comments.png", alt="comments")
 														span 12
 									li.orbit-slide
 										div.slide1
 											.img-center
-													img(src="../img/slide/slide1.jpg", alt="slide").orbit-image
+													img(src="img/slide/slide1.jpg", alt="slide").orbit-image
 											.shadow
 												.topic-top
 													a(href="") Про любовь
 												.topic
 													a(href="#topic") Как люди "убивают" в людях все людьское
 												.view
-														img(src="../img/icons/eyes.png", alt="eyes")
+														img(src="img/icons/eyes.png", alt="eyes")
 														span 15
 												.comment
-														img(src="../img/icons/comments.png", alt="comments")
+														img(src="img/icons/comments.png", alt="comments")
 														span 12
-						.large-5.columns.block-slider.right-padding
+								nav.orbit-bullets
+									button.is-active(data-slide="0")
+										span.show-for-sr First slide details.
+										span.show-for-sr Current Slide
+									button(data-slide="1")
+										span.show-for-sr Second slide details
+									button(data-slide="2")
+										span.show-for-sr Third slide details.
+						.large-5.medium-5.columns.block-slider.right-padding
 							div.slide1.block-2
 								.img-center
-									img(src="../img/blocks/block-2.jpg", alt="slide").orbit-image
+									img(src="img/blocks/block-2.jpg", alt="slide").orbit-image
 								.shadow
 									.topic-top
-										a(href="") Про любовь
+										a(href="#love") Про любовь
+									.topic-top.adv
+										a(href="#love") Реклама
 									.topic
 										a(href="#topic") Как люди "убивают" в людях все людьское
 									.view
-										img(src="../img/icons/eyes.png", alt="eyes")
+										img(src="img/icons/eyes.png", alt="eyes")
 										span 15
 									.comment
-										img(src="../img/icons/comments.png", alt="comments")
+										img(src="img/icons/comments.png", alt="comments")
 										span 12
 					.row
 						.container-block
 							.block-3.text-center.grid
+								.topic-top
+									a(href="#love") Про любовь
 								.info
-									img(src="../img/blocks/block-3.png", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
+									.img-center
+										img(src="img/blocks/block-3.png", alt="")
+									a 6 способов сделать понедельник лучшим днем недели!
 									hr
 									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
+										img(src="img/icons/eyes.png", alt="eyes")
 										span 74
-										img(src="../img/icons/comments.png", alt="comments")
-										span 54
-							.block-3.text-center.grid
-								.info
-									img(src="../img/blocks/block-4.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
-									hr
-									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
-										span 74
-										img(src="../img/icons/comments.png", alt="comments")
+										img(src="img/icons/comments.png", alt="comments")
 										span 54
 							.block-3.pink.text-center.grid
+								.topic-top
+									a(href="#love") Про любовь
 								.info
-									img(src="../img/blocks/block-5.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
+									.img-center
+										img(src="img/blocks/block-5.jpg", alt="")
+									a 6 способов сделать понедельник лучшим днем недели!
 									hr
 									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
+										img(src="img/icons/eyes.png", alt="eyes")
 										span 74
-										img(src="../img/icons/comments.png", alt="comments")
+										img(src="img/icons/comments.png", alt="comments")
+										span 54
+							.block-3.text-center.grid
+								.topic-top
+									a(href="#love") Про любовь
+								.info
+									.img-center
+										img(src="img/blocks/block-3.png", alt="")
+									a 6 способов сделать понедельник лучшим днем недели!
+									hr
+									.info-views
+										img(src="img/icons/eyes.png", alt="eyes")
+										span 74
+										img(src="img/icons/comments.png", alt="comments")
 										span 54
 						.right-sidebar
 							.block-3.text-center.grid
 									.info
-										img(src="../img/blocks/banner.jpg", alt="")
+										img(src="img/blocks/banner.jpg", alt="")
 							include reklama.jade
 						.container-block.competitions
-							.block-3.text-center
+							.block-3.text-center.competitions-block
 								h3 Конкурсы
 								.border
-									img(src="../img/concurs.png", alt="")
+									img(src="img/concurs.png", alt="")
 									p.
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis id quidem earum assumenda quisquam ad expedita, repellat eaque quae excepturi!
-									button.button.button-purple Участвовать
+									a(href="#")
+										button.button.button-purple Участвовать
 									h4 Лидеры конкурса
 									.row
 										.leaders
-											.leader.large-3.columns
-												img(src="../img/leaders/leader1.jpg", class="round-img" alt="leader1")
-												p 
-													b Жанна
+											.leader.large-3.medium-3.columns
+												a(href="#") 
+													img(src="img/leaders/leader1.jpg", class="round-img" alt="leader1")
+												p
+													a(href="#")  
+														b Жанна
 												.heart
-													img(src="../img/icons/heart.png", alt="heart-icon")
+													a(href="#") 
+														img(src="img/icons/heart.png", alt="heart-icon")
 													span 132
-											.leader.large-3.columns
-												img(src="../img/leaders/leader2.jpg", class="round-img" alt="leader1")
-												p 
-													b Айгерим
+											.leader.large-3.medium-3.columns
+												a(href="#") 
+													img(src="img/leaders/leader2.jpg", class="round-img" alt="leader1")
+												p
+													a(href="#")  
+														b Айгерим
 												.heart
-													img(src="../img/icons/heart.png", alt="heart-icon")
+													a(href="#") 
+														img(src="img/icons/heart.png", alt="heart-icon")
 													span 132
-											.leader.large-3.columns
-												img(src="../img/leaders/leader3.jpg", class="round-img" alt="leader1")
-												p 
-													b Айару
+											.leader.large-3.medium-3.columns
+												a(href="#") 
+													img(src="img/leaders/leader3.jpg", class="round-img" alt="leader1")
+												p
+													a(href="#")  
+														b Айару
 												.heart
-													img(src="../img/icons/heart.png", alt="heart-icon")
+													a(href="#") 
+														img(src="img/icons/heart.png", alt="heart-icon")
 													span 132
-											.leader.large-3.columns
-												img(src="../img/leaders/leader4.jpg", class="round-img" alt="leader1")
-												p 
-													b Наталья
+											.leader.large-3.medium-3.columns
+												a(href="#") 
+													img(src="img/leaders/leader4.jpg", class="round-img" alt="leader1")
+												p
+													a(href="#")  
+														b Наталья
 												.heart
-													img(src="../img/icons/heart.png", alt="heart-icon")
+													a(href="#") 
+														img(src="img/icons/heart.png", alt="heart-icon")
 													span 132
-							.block-3.pink.text-center.grid
-								.info
-									img(src="../img/blocks/block-5.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
-									hr
-									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
-										span 74
-										img(src="../img/icons/comments.png", alt="comments")
-										span 54
-							.block-3.pink.text-center.grid
-								.info
-									img(src="../img/blocks/block-5.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
-									hr
-									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
-										span 74
-										img(src="../img/icons/comments.png", alt="comments")
-										span 54
-
-							.block-3.text-center.grid
-								.info
-									img(src="../img/blocks/block-5.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
-									hr
-									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
-										span 74
-										img(src="../img/icons/comments.png", alt="comments")
-										span 54
-							.block-3.pink.text-center.grid
-								.info
-									img(src="../img/blocks/block-5.jpg", alt="")
-									h3 6 способов сделать понедельник лучшим днем недели!
-									hr
-									.info-views
-										img(src="../img/icons/eyes.png", alt="eyes")
-										span 74
-										img(src="../img/icons/comments.png", alt="comments")
-										span 54
-			.large-12.columns.middle
+						.container-block3
+							- for (var x = 0; x < 15; x++)
+								-if (x % 2)
+									.block-3.text-center.grid
+										.topic-top
+											a(href="#love") Про любовь
+										.info
+											.img-center
+												img(src="img/blocks/block-3.png", alt="")
+											a 6 способов сделать понедельник лучшим днем недели!
+											hr
+											.info-views
+												img(src="img/icons/eyes.png", alt="eyes")
+												span 74
+												img(src="img/icons/comments.png", alt="comments")
+												span 54
+								-else 
+									.block-3.pink.text-center.grid
+										.topic-top
+											a(href="#love") Про любовь
+										.info
+											.img-center
+												img(src="img/blocks/block-5.jpg", alt="")
+											a 6 способов сделать понедельник лучшим днем недели!
+											hr
+											.info-views
+												img(src="img/icons/eyes.png", alt="eyes")
+												span 74
+												img(src="img/icons/comments.png", alt="comments")
+												span 54
+			.large-12.medium-12.columns.middle
 				.row
-					.large-12.columns
+					.large-12.medium-12.columns
 						.row
 							h4
 								span.purple Сейчас
 								span  Обсуждает
-							.large-3.columns
+							.large-3.medium-3.columns
 								.middle-block
-									img(src="../img/middle/block-middle-1.jpg", alt="")
-									small Стиль и мода
+									.img-center
+										a(href="#")
+											img(src="img/middle/block-middle-1.jpg", alt="")
+									a(href="#")
+										small Стиль и мода
 									p.
 										"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку
 									p.comments.text-center 24
-							.large-3.columns
+							.large-3.medium-3.columns
 								.middle-block
-									img(src="../img/middle/block-middle-2.jpg", alt="")
-									small Стиль и мода
+									.img-center
+										a(href="#")
+											img(src="img/middle/block-middle-2.jpg", alt="")
+									a(href="#")
+										small Стиль и мода
 									p.
 										"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку
 									p.comments.text-center 65
-							.large-3.columns
+							.large-3.medium-3.columns
 								.middle-block
-									img(src="../img/middle/block-middle-3.jpg", alt="")
-									small Стиль и мода
+									.img-center
+										a(href="#")
+											img(src="img/middle/block-middle-3.jpg", alt="")
+									a(href="#")
+										small Стиль и мода
 									p.
 										"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку
 									p.comments.text-center 21
-							.large-3.columns
+							.large-3.medium-3.columns
 								.middle-block
-									img(src="../img/middle/block-middle-4.jpg", alt="")
-									small Стиль и мода
+									.img-center
+										a(href="#")
+											img(src="img/middle/block-middle-4.jpg", alt="")
+									a(href="#")
+										small Стиль и мода
 									p.
 										"Холост" - 2015 - вечеринка для тех кто ищет вторую половинку
 									p.comments.text-center 73

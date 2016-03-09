@@ -10,7 +10,6 @@ var gulp = require("gulp"),
     uncss = require('gulp-uncss'),
     connect = require('gulp-connect'),
     livereload = require('gulp-livereload'),
-    autoprefixer = require('gulp-autoprefixer'),
     clean = require('gulp-clean'),
     jade = require('gulp-jade'),
     plumber = require('gulp-plumber');
@@ -35,10 +34,10 @@ gulp.task('connect', function() {
 });
 
 //Autoprefix
-gulp.task('autoprefixer', function() {
-    gulp.src('app/css/*.css')
-        .pipe(autoprefixer());
-});
+// gulp.task('autoprefixer', function() {
+//     gulp.src('app/css/*.css')
+//         .pipe(autoprefixer());
+// });
 
 gulp.task('sass', function() {
     gulp.src('app/scss/*.scss')
@@ -46,10 +45,7 @@ gulp.task('sass', function() {
         .pipe(sass({
             outputStyle: 'compressed'
             }))
-        .pipe(gulp.dest('app/css/'))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'ie >= 9']
-        }))
+        .pipe(gulp.dest('app/build/css/'))
         .pipe(connect.reload());
 });
 
@@ -57,12 +53,11 @@ gulp.task('sass', function() {
 gulp.task('jade', function() {
     return gulp.src('app/**/*.jade')
         .pipe(plumber())
+        .pipe(connect.reload())
         .pipe(jade({
             pretty: true
         }))
-        
-        .pipe(gulp.dest("app/build/"))
-        .pipe(connect.reload());
+        .pipe(gulp.dest("app/build/"));
 });
 
 gulp.task('uncss', function() {
@@ -84,10 +79,10 @@ gulp.task('clean', ['sass'], function() {
 
 gulp.task('html', function() {
     var assets = useref.assets();
-    return gulp.src('app/**/*.html')
+    return gulp.src('app/build/*.html')
         .pipe(assets)
-        .pipe(gulpif('js/*.js', uglify()))
-        .pipe(gulpif('css/*.css', minifyCss()))
+        .pipe(gulpif('**/*.js', uglify()))
+        .pipe(gulpif('**/*.css', minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest("dist"));
@@ -121,4 +116,4 @@ gulp.task('watch', function() {
 });
 
 //default
-gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade', 'autoprefixer']);
+gulp.task('default', ['connect', 'sass', 'watch', 'hml', 'js', 'jade']);
