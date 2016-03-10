@@ -1,0 +1,44 @@
+extends includes/home.jade
+block title
+	title Конкурс
+block content
+	.row
+		.large-12.columns.large-centered.concurs
+			.row
+				.large-8.columns.lades.padding-left
+					nav(aria-label="You are here:" role="navigation")
+						ul.breadcrumbs
+							li
+								a(href="#") Главная
+							li.disabled Конкурс
+					.row
+						.large-12.columns
+							h1 Наши чудесные леди!
+							ul.tabs#tabs-concurs(data-tabs)
+								li.tabs-title.is-active
+									a(href="#about-concurs" aria-selected="true") О конкурсе
+								li.tabs-title
+									a(href="#rules" aria-selected="true") Правила
+								li.tabs-title
+									a(href="#member" aria-selected="true") Участницы
+								li.tabs-title
+									a(href="#prise" aria-selected="true") Призы
+								li.tabs-title
+									a(href="#winner" aria-selected="true") Победители
+								.float-right.date
+									span январь 2016
+							.tabs-content(data-tabs-content="tabs-concurs")
+								.tabs-panel.is-active.text-center#about-concurs
+									include includes/tabs-concurs/about-concurs.jade
+								.tabs-panel#rules
+									include includes/tabs-concurs/rules.jade
+								.tabs-panel#member
+									include includes/tabs-concurs/member.jade
+								.tabs-panel#prise
+									include includes/tabs-concurs/prise.jade
+								.tabs-panel#winner
+									include includes/tabs-concurs/winner.jade
+				.large-3.columns.block-right
+					include includes/banner.jade
+					.advertising
+						include includes/reklama.jade
