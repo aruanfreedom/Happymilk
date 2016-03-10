@@ -67,7 +67,6 @@ gulp.task('uncss', function() {
             ignore: [/^meta.foundation/, /f-topbar-fixed/, /contain-to-grid/, /sticky/, /fixed/]
         }))
         .pipe(gulp.dest('app/css/'));
-
 });
 
 gulp.task('clean', ['sass'], function() {

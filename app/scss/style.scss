@@ -19,7 +19,7 @@ $small-custom: 640px;
 body,
 html {
 	font-family: "Open Sans", sans-serif;
-	min-width: 1300px;
+	min-width: 1280px;
 	@media only screen and (max-width: $small-custom - 1) { 
 		min-width: 100%;
 	}
