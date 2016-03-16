@@ -1,44 +1,53 @@
 extends includes/home.jade
 block title
-	title Конкурс
+	title Кабинет
 block content
 	.row
-		.large-12.columns.large-centered.concurs
+		.large-12.medium-12.columns.large-centered.concurs
 			.row
-				.large-8.columns.lades.padding-left
+				.large-8.medium-8.columns.cabinet.padding-left
 					nav(aria-label="You are here:" role="navigation")
-						ul.breadcrumbs
-							li
-								a(href="#") Главная
-							li.disabled Конкурс
 					.row
-						.large-12.columns
-							h1 Наши чудесные леди!
-							ul.tabs#tabs-concurs(data-tabs)
-								li.tabs-title.is-active
-									a(href="#about-concurs" aria-selected="true") О конкурсе
-								li.tabs-title
-									a(href="#rules" aria-selected="true") Правила
-								li.tabs-title
-									a(href="#member" aria-selected="true") Участницы
-								li.tabs-title
-									a(href="#prise" aria-selected="true") Призы
-								li.tabs-title
-									a(href="#winner" aria-selected="true") Победители
-								.float-right.date
-									span январь 2016
-							.tabs-content(data-tabs-content="tabs-concurs")
-								.tabs-panel.is-active.text-center#about-concurs
-									include includes/tabs-concurs/about-concurs.jade
-								.tabs-panel#rules
-									include includes/tabs-concurs/rules.jade
-								.tabs-panel#member
-									include includes/tabs-concurs/member.jade
-								.tabs-panel#prise
-									include includes/tabs-concurs/prise.jade
-								.tabs-panel#winner
-									include includes/tabs-concurs/winner.jade
-				.large-3.columns.block-right
+						.large-12.medium-12.columns
+							h1.text-center Личный кабинет
+							.border-cabinet.float-right
+								.large-4.medium-4.columns.padding-none
+									.img-center
+										img(src="img/cabinet-person/person.jpg")
+									.round-balls.text-center
+										h3 Ваши баллы
+										p Всего
+										span
+											p 167px
+										p баллов
+								.large-8.medium-8.small-12.columns
+									form
+										.large-6.medium-6.small-6.columns
+											label Логин
+												input(type="text" placeholder="" name="login")
+												small Минимум 3 символа
+											label Пароль
+												input(type="password" placeholder="213213" name="pass")
+												small Минимум 6 символа
+											label Имя
+												input(type="text" placeholder="Айгерим" name="name")
+												small Будет отображаться в комментариях
+											label Email
+												input(type="email" placeholder="kerim@mail.ru" name="email")
+											label Дата рождение
+												input(type="date" placeholder="" name="date-bithday")
+										.large-6.medium-6.small-6.columns.col-2
+											label.login Логин: kerim
+											label Повторите пароль
+												input(type="text" placeholder="" name="login")
+											label.fam Фамилия
+												input(type="text" placeholder="" name="login")
+										.clearfix
+									button.button.button-purple Сохранить
+								span.password
+									a(href="") Изменить пароль
+								.clearfix
+				.large-3.medium-3.columns.block-right
 					include includes/banner.jade
 					.advertising
 						include includes/reklama.jade

@@ -12,6 +12,7 @@ sans-serif;
 $tinos: 'Tinos',sans-serif;
 $yellow-dark: #ffe8d6;
 $small-custom: 640px;
+$grey-line: #c7c9d8;
 * {
 	box-sizing: border-box;
 }
@@ -39,6 +40,9 @@ html {
 
 .right-padding {
 	padding-right: 11px;
+}
+.padding-right {
+	padding-right: 0px;
 }
 
 a {
@@ -836,7 +840,7 @@ footer {
 		font-weight: bold;
 		font-size: 0.875em;
 		padding-top: 5px;
-		@media only screen and (max-width: $small-custom - 1) { 
+		@media only screen and (max-width: $small-custom - 1) {
 			float: none;
 			clear: both;
 			text-align: center;
@@ -896,7 +900,7 @@ footer {
 			background: url("../img/icons/mask.jpg") no-repeat;
 			padding-left: 120px;
 			margin-top: 30px;
-			@media only screen and (max-width: $small-custom - 1) { 
+			@media only screen and (max-width: $small-custom - 1) {
 				background: none;
 				padding-left: 0px;
 			}
@@ -959,6 +963,108 @@ footer {
 	}
 	.button-purple {
 		padding: 10px 10px;
+	}
+}
+
+.cabinet{
+	h1{
+		color: $purple;
+		border-bottom: 2px solid $grey-line;
+		font-family: $times;
+		font-size: 1.8em;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 10px 0 5px 0;
+	}
+	@media only screen and (max-width: $small-custom - 1) { 
+		.padding-none{
+			padding: 0;
+		}
+	}
+	.border-cabinet{
+		border: 1px solid $grey-line;
+		margin: 25px 0;
+		position: relative;
+		width: 98%;
+		@media only screen and (max-width: $small-custom - 1) { 
+			width: 100%;
+		}
+		.img-center {
+			position: relative;
+			overflow: hidden;
+			margin: -18px 0px 0 -32px;
+			height: 348px;
+			width: 100%;
+			@media only screen and (max-width: $small-custom - 1) { 
+				margin: 0;
+			}
+			img {
+				width: 100%;
+			}
+		}
+		.round-balls{
+			margin-left: -16px;
+			width: 92%;
+			@media only screen and (max-width: $small-custom - 1) { 
+				margin-left: 0;
+				width: 100%;
+			}
+			h3{
+				background: url("../img/pattern.png") 100% center no-repeat;
+				font-size: 1.2em;
+				padding: 30px;
+				width: 200px;
+			}
+			p{
+				color: #4f4f4f;
+				margin: 0;
+			}
+			span{
+				p{
+					border-radius: 50%;
+					border: 1px solid $grey-line;
+					padding: 10% 0 0 0;
+					color: #000;
+					margin: 0 auto;
+					height: 65px;
+					width: 65px;
+					@media only screen and (max-width: $small-custom - 1) { 
+						padding: 4% 0;
+					}
+				}
+			}
+		}
+		.col-2{
+			.login{
+				padding: 15% 0;
+				height: 89px;
+			}
+		}
+		label{
+				margin-bottom: 20px;
+		}
+		input{
+			margin-bottom: 0;
+		}
+		.fam{
+			margin-top: 44px;
+		}
+		.password{
+			position: absolute;
+			top: 5px;
+			right: 8px;
+			a{
+				color: red;
+				font-size: 0.9em;
+			}
+		}
+		form{
+			border-bottom: 1px solid $grey-line;
+			margin-top: 15px;
+		}
+		button{
+			margin-top: 20px;
+		}
 	}
 }
 

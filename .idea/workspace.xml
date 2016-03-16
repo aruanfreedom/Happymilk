@@ -2,80 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b24261b-edf2-4064-b691-8a91da00f058" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/blocks/block-3.png" afterPath="$PROJECT_DIR$/app/img/blocks/block-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/blocks/block-5.jpg" afterPath="$PROJECT_DIR$/app/img/blocks/block-5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/lib/phantom/bin/phantomjs" afterPath="$PROJECT_DIR$/node_modules/phantomjs/lib/phantom/bin/phantomjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/article.html" afterPath="$PROJECT_DIR$/app/build/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/concurs.html" afterPath="$PROJECT_DIR$/app/build/concurs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/css/style.css" afterPath="$PROJECT_DIR$/app/build/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/includes/bottom.html" afterPath="$PROJECT_DIR$/app/build/includes/bottom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/includes/home.html" afterPath="$PROJECT_DIR$/app/build/includes/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/includes/reklama.html" afterPath="$PROJECT_DIR$/app/build/includes/reklama.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/includes/script.html" afterPath="$PROJECT_DIR$/app/build/includes/script.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/index.html" afterPath="$PROJECT_DIR$/app/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/page-person.html" afterPath="$PROJECT_DIR$/app/build/page-person.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/style.html" afterPath="$PROJECT_DIR$/app/build/style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/includes/bottom.jade" afterPath="$PROJECT_DIR$/app/includes/bottom.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/includes/home.jade" afterPath="$PROJECT_DIR$/app/includes/home.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/includes/reklama.jade" afterPath="$PROJECT_DIR$/app/includes/reklama.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/includes/script.jade" afterPath="$PROJECT_DIR$/app/includes/script.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/style.scss" afterPath="$PROJECT_DIR$/app/scss/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style.jade" afterPath="$PROJECT_DIR$/app/style.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.css" afterPath="$PROJECT_DIR$/dist/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/cleancss" afterPath="$PROJECT_DIR$/node_modules/.bin/cleancss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/dateformat" afterPath="$PROJECT_DIR$/node_modules/.bin/dateformat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/har-validator" afterPath="$PROJECT_DIR$/node_modules/.bin/har-validator" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/has-ansi" afterPath="$PROJECT_DIR$/node_modules/.bin/has-ansi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/jade" afterPath="$PROJECT_DIR$/node_modules/.bin/jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/node-gyp" afterPath="$PROJECT_DIR$/node_modules/.bin/node-gyp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" afterPath="$PROJECT_DIR$/node_modules/.bin/nopt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/phantomjs" afterPath="$PROJECT_DIR$/node_modules/.bin/phantomjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sassgraph" afterPath="$PROJECT_DIR$/node_modules/.bin/sassgraph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-ansi" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-ansi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-indent" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-indent" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/supports-color" afterPath="$PROJECT_DIR$/node_modules/.bin/supports-color" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/tiny-lr" afterPath="$PROJECT_DIR$/node_modules/.bin/tiny-lr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uncss" afterPath="$PROJECT_DIR$/node_modules/.bin/uncss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/user-home" afterPath="$PROJECT_DIR$/node_modules/.bin/user-home" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/which" afterPath="$PROJECT_DIR$/node_modules/.bin/which" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" afterPath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/browserslist/cli.js" afterPath="$PROJECT_DIR$/node_modules/browserslist/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/clean-css/bin/cleancss" afterPath="$PROJECT_DIR$/node_modules/clean-css/bin/cleancss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/dateformat/bin/cli.js" afterPath="$PROJECT_DIR$/node_modules/dateformat/bin/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/har-validator/bin/har-validator" afterPath="$PROJECT_DIR$/node_modules/har-validator/bin/har-validator" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/has-ansi/cli.js" afterPath="$PROJECT_DIR$/node_modules/has-ansi/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/bin/jade.js" afterPath="$PROJECT_DIR$/node_modules/jade/bin/jade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mkdirp/bin/cmd.js" afterPath="$PROJECT_DIR$/node_modules/mkdirp/bin/cmd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-gyp/bin/node-gyp.js" afterPath="$PROJECT_DIR$/node_modules/node-gyp/bin/node-gyp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-sass/bin/node-sass" afterPath="$PROJECT_DIR$/node_modules/node-sass/bin/node-sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-uuid/bin/uuid" afterPath="$PROJECT_DIR$/node_modules/node-uuid/bin/uuid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/node_modules/nopt/bin/nopt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/bin/phantomjs" afterPath="$PROJECT_DIR$/node_modules/phantomjs/bin/phantomjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/.bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/node_modules/rimraf/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sass-graph/bin/sassgraph" afterPath="$PROJECT_DIR$/node_modules/sass-graph/bin/sassgraph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sass-graph/node_modules/.bin/window-size" afterPath="$PROJECT_DIR$/node_modules/sass-graph/node_modules/.bin/window-size" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sass-graph/node_modules/window-size/cli.js" afterPath="$PROJECT_DIR$/node_modules/sass-graph/node_modules/window-size/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sshpk/bin/sshpk-conv" afterPath="$PROJECT_DIR$/node_modules/sshpk/bin/sshpk-conv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/strip-ansi/cli.js" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/strip-indent/cli.js" afterPath="$PROJECT_DIR$/node_modules/strip-indent/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/supports-color/cli.js" afterPath="$PROJECT_DIR$/node_modules/supports-color/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/tiny-lr/bin/tiny-lr" afterPath="$PROJECT_DIR$/node_modules/tiny-lr/bin/tiny-lr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/uncss/bin/uncss" afterPath="$PROJECT_DIR$/node_modules/uncss/bin/uncss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/user-home/cli.js" afterPath="$PROJECT_DIR$/node_modules/user-home/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/which/bin/which" afterPath="$PROJECT_DIR$/node_modules/which/bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Happymilk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -238,48 +165,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Happymilk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -287,7 +172,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dumk3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />

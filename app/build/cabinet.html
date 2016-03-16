@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/fonts/tinos/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css">
-    <title>Конкурс</title>
+    <title>Кабинет</title>
   </head>
   <body>
     <div id="sign" data-reveal class="reveal">
@@ -150,242 +150,61 @@
       </div>
     </div>
     <div class="row">
-      <div class="large-12 columns large-centered concurs">
+      <div class="large-12 medium-12 columns large-centered concurs">
         <div class="row">
-          <div class="large-8 columns lades padding-left">
-            <nav aria-label="You are here:" role="navigation">
-              <ul class="breadcrumbs">
-                <li><a href="#">Главная</a></li>
-                <li class="disabled">Конкурс</li>
-              </ul>
-            </nav>
+          <div class="large-8 medium-8 columns cabinet padding-left">
+            <nav aria-label="You are here:" role="navigation"></nav>
             <div class="row">
-              <div class="large-12 columns">
-                <h1>Наши чудесные леди!</h1>
-                <ul id="tabs-concurs" data-tabs class="tabs">
-                  <li class="tabs-title is-active"><a href="#about-concurs" aria-selected="true">О конкурсе</a></li>
-                  <li class="tabs-title"><a href="#rules" aria-selected="true">Правила</a></li>
-                  <li class="tabs-title"><a href="#member" aria-selected="true">Участницы</a></li>
-                  <li class="tabs-title"><a href="#prise" aria-selected="true">Призы</a></li>
-                  <li class="tabs-title"><a href="#winner" aria-selected="true">Победители</a></li>
-                  <div class="float-right date"><span>январь 2016</span></div>
-                </ul>
-                <div data-tabs-content="tabs-concurs" class="tabs-content">
-                  <div id="about-concurs" class="tabs-panel is-active text-center">
-                    <h2>Наши чудесные Леди!</h2>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus libero pariatur ad voluptas hic! Quae atque quos recusandae repellendus ea optio, quidem similique laboriosam vel reprehenderit cumque pariatur porro accusamus expedita incidunt culpa asperiores veritatis autem temporibus deleniti amet velit nam blanditiis delectus! Dolorum esse dicta incidunt blanditiis! Non, quae.</p>
-                    <p class="purple">Для того чтобы стать участником нужно зарегистрироватся</p>
-                    <button data-open="sign-up" class="button-purple">Зарегистрироваться</button>
+              <div class="large-12 medium-12 columns">
+                <h1 class="text-center">Личный кабинет</h1>
+                <div class="border-cabinet float-right">
+                  <div class="large-4 medium-4 columns padding-none">
+                    <div class="img-center"><img src="img/cabinet-person/person.jpg"></div>
+                    <div class="round-balls text-center">
+                      <h3>Ваши баллы</h3>
+                      <p>Всего</p><span>
+                        <p>167px</p></span>
+                      <p>баллов</p>
+                    </div>
                   </div>
-                  <div id="rules" class="tabs-panel">
-                    <h3>Правила конкурса </h3>
-                    <p class="topic">ПОДРОБНЫЕ ПРАВИЛА КОНКУРСА "ГЕРОИНЯ НАШЕГО ВРЕМЕНИ"</p>
-                    <p>Условия конкурса. Предворительный этап. Каждый месяц редакционная и читательское жури будут выбирать 3 участниц, которые пройдут в финал конкурса:</p>
-                    <ul>
-                      <li>1 участницу выбирают читатели (учитывается количество набранных голосов на сайте)</li>
-                      <li>1 участницу выбирают редакционное жюри</li>
-                      <li>1 участницу выбирают писательница Анна Литвинова</li>
-                    </ul>
-                  </div>
-                  <div id="member" class="tabs-panel">
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
+                  <div class="large-8 medium-8 small-12 columns">
+                    <form>
+                      <div class="large-6 medium-6 small-6 columns">
+                        <label>Логин
+                          <input type="text" placeholder="" name="login"><small>Минимум 3 символа</small>
+                        </label>
+                        <label>Пароль
+                          <input type="password" placeholder="213213" name="pass"><small>Минимум 6 символа</small>
+                        </label>
+                        <label>Имя
+                          <input type="text" placeholder="Айгерим" name="name"><small>Будет отображаться в комментариях</small>
+                        </label>
+                        <label>Email
+                          <input type="email" placeholder="kerim@mail.ru" name="email">
+                        </label>
+                        <label>Дата рождение
+                          <input type="date" placeholder="" name="date-bithday">
+                        </label>
                       </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                      <div class="name float-left">
-                        <h4>Гульнар</h4>
-                        <p>Астана</p>
-                      </div>
-                      <div class="like float-right text-center">
-                        <p><img src="img/icons/heart.png" alt="heart-icon"></p>
-                        <p><small>24</small></p>
-                      </div>
-                    </div>
-                    <div class="large-12 columns comments">
-                      <h4>Добавьте комментарий</h4>
-                      <div class="add-comments">
-                        <form>
-                          <textarea placeholder="Оставьте свой комментарий"></textarea>
-                          <div class="float-left"><img src="img/captcha.jpg" alt="captcha"></div>
-                          <div class="float-right">
-                            <button class="button-purple">Участвовать</button>
-                          </div>
-                          <div class="clearfix"></div>
-                        </form>
-                      </div>
-                      <h4>Комментарий</h4>
-                      <div class="add-comments comment">
-                        <form>
-                          <textarea placeholder="Оставьте свой комментарий"></textarea>
-                          <input type="text" name="answer" placeholder="Ответить">
-                        </form>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div id="prise" class="tabs-panel">
-                    <div class="large-6 columns">
-                      <p>ПРИЗ января - бьюти-коробки от Beauty Forma</p><img src="img/prise/prise-1.png" alt="prise">
-                    </div>
-                    <div class="large-6 columns">
-                      <p>ПРИЗ января - бьюти-коробки от Beauty Forma</p><img src="img/prise/prise-1.png" alt="prise">
-                    </div>
-                    <div class="large-6 columns">
-                      <p>ПРИЗ января - бьюти-коробки от Beauty Forma</p><img src="img/prise/prise-1.png" alt="prise">
-                    </div>
-                    <div class="large-6 columns">
-                      <p>ПРИЗ января - бьюти-коробки от Beauty Forma</p><img src="img/prise/prise-1.png" alt="prise">
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div id="winner" class="tabs-panel">
-                    <div class="winner text-center">
-                      <h2>Победительницы</h2>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
-                      <div class="large-12 columns">
-                        <h3>Январь 2016</h3>
-                      </div>
-                      <div class="hr"></div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
+                      <div class="large-6 medium-6 small-6 columns col-2">
+                        <label class="login">Логин: kerim</label>
+                        <label>Повторите пароль
+                          <input type="text" placeholder="" name="login">
+                        </label>
+                        <label class="fam">Фамилия
+                          <input type="text" placeholder="" name="login">
+                        </label>
                       </div>
                       <div class="clearfix"></div>
-                      <div class="large-12 columns top2">
-                        <h3>Декабрь 2015</h3>
-                      </div>
-                      <div class="hr"></div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                      <div class="large-12 columns top2">
-                        <h3>Ноябрь 2015</h3>
-                      </div>
-                      <div class="hr"></div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="large-4 columns"><img src="img/member/member.jpg" alt="member">
-                        <div class="name text-center">
-                          <h4>Гульнар</h4><small>Астана</small>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
+                    </form>
+                    <button class="button button-purple">Сохранить</button>
+                  </div><span class="password"><a href="">Изменить пароль</a></span>
+                  <div class="clearfix"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="large-3 columns block-right">
+          <div class="large-3 medium-3 columns block-right">
             <div class="block-3 text-center grid"><img src="img/blocks/banner.jpg" alt=""></div>
             <div class="advertising">
               <div class="block-3 text-center grid">
