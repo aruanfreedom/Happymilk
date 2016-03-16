@@ -1,0 +1,121 @@
+// @media only screen and (max-width: 980px) {}
+
+// @media only screen and (max-width: 800px) {}
+
+ @media only screen and (max-width: 768px) {
+    .home {
+        #video {
+            .tabs.vertical {
+                display: none;
+                max-width: 35%;
+                width: 35%;
+                li.active {
+                    a {
+                        position: relative;
+                        &:before {
+                            content: "";
+                            background: url("../img/icons/arrow-video.png") no-repeat;
+                            position: absolute;
+                            right: -15px;
+                            top: 45%;
+                            height: 26px;
+                            width: 15px;
+                            z-index: 100;
+                        }
+                    }
+                }
+                h4 {
+                    color: #fff;
+                    font-size: 1.2em;
+                }
+                p {
+                    font-size: 0.9em;
+                }
+            }
+            .tabs-content {
+                display: none;
+                height: 100%;
+                .content {
+                    padding: 0;
+                }
+                iframe {
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    width: 64.5%;
+                }
+            }
+            .accordion {
+                display: block;
+                iframe {
+                    height: 250px;
+                    width: 100%;
+                }
+                .content {
+                    padding: 0;
+                }
+            }
+        }
+        #stock {
+            h2 {
+                width: 35%;
+            }
+        }
+        #news {
+            h2 {
+
+            }
+        }
+        #footer {
+            h2 {
+                padding-top: 20px;
+            }
+        }
+    }
+    #agent,
+    #registration,
+    #bell {
+        .welcome {
+            background: none;
+            background-size: 100%;
+            padding: 10px 0;
+            width: 100%;
+            h2 {
+                font-size: 1em;
+                padding: 10px 0 10px 0;
+            }
+        }
+        label {
+            font-size: 1.1em;
+        }
+        .registration {
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #agent,
+    #registration,
+    #bell {
+        .welcome {
+            background: none;
+            background-size: 100%;
+            padding: 10px 0;
+            width: 100%;
+            h2 {
+                font-size: 0.75em;
+                padding-top: 10px;
+            }
+        }
+        label {
+            font-size: 1.1em;
+        }
+        .registration {
+            font-size: 1.1em;
+        }
+    }
+
+}

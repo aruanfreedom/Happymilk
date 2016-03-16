@@ -1,0 +1,226 @@
+            @media only screen and (min-width: 1920px) {}
+
+            @media only screen and (max-width: 1835px) {
+                .home {
+                    .lang {
+                        .button {
+                            font-size: 0.8em;
+                        }
+                    }
+                    #menu-certup {
+                        .top-bar {
+                            .right {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .left {
+                            li {
+                                a {
+                                    font-size: 0.9em;
+                                    padding: 0 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1613px) {
+                .home {
+                    .icon {
+                        p {
+                            font-size: 1em;
+                        }
+                    }
+                    .header {
+                        // .counter {
+                        //     margin-top: 22px;
+                        //     position: relative;
+                        //     right: 0;
+                        //     span {
+                        //         font-size: 0.5em;
+                        //         padding: 7px;
+                        //     }
+                        //     p{
+                        //         font-size: 0.7em;
+                        //     }
+                        // }
+                        small{
+                                font-size: 0.7em;
+                            }
+                    }
+                    #menu-certup {
+                        .top-bar {
+                            .right {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    #clients{
+                        h2{
+                            background: #fff;
+                            color: #313131;
+                            text-transform: uppercase;
+                            font-size: 1.9em;
+                            font-weight: bold;
+                            margin: -22px auto;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1366px) {
+                .home {
+                    .lang {
+                        .button {
+                            font-size: 0.65em;
+                            padding: 1em 0.4em 1.0625em;
+                        }
+                    }
+                    .icon {
+                        p {
+                            font-size: 0.8em;
+                        }
+                    }
+                    #service {
+                        .documents {
+                            section {
+                                h2 {
+                                    font-size: 1.3em;
+                                    margin: -15px auto;
+                                    margin-bottom: 0;
+                                    width: 30%;
+                                }
+                                h3 {
+                                    i {
+                                        font-size: 0.9em;
+                                    }
+                                }
+                                p {
+                                    // font-size: 0.6em;
+                                }
+                            }
+                        }
+                    }
+                    #menu-certup {
+                        .left {
+                            li {
+                                a {
+                                    font-size: 0.9em;
+                                    padding: 0 8px;
+                                }
+                            }
+                        }
+                    }
+                    #stock {
+                        h2 {
+                            width: 22%;
+                        }
+                    }
+                    #news {
+                        h2 {
+
+                        }
+                    }
+                }
+                #agent,
+                #registration,
+                #bell {
+                    .margin {
+                        &.padding-top {
+                            height: 100px;
+                        }
+                    }
+                    .sign,
+                    .registration {
+                        background: #e7bc37;
+                        border-radius: 5px;
+                        box-shadow: 0 -3px 0 0 rgba(215, 171, 39, .9) inset;
+                        border: none;
+                        color: #000;
+                        margin: 0;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: 1.2em;
+                        -webkit-appearance: none;
+                        padding: 1em 2em 1.0625em;
+                        &:active {
+                            border: none;
+                            box-shadow: 0 1px 0 rgba(0, 0, 0, .2) inset;
+                        }
+                    }
+                    .registration {
+                        background: #c6c6c6;
+                        font-size: 0.9em;
+                        box-shadow: 0 -3px 0 0 rgba(158, 158, 158, .9) inset;
+                    }
+                    .close-reveal-modal {
+                        font-weight: 100;
+                        font-size: 1.8em;
+                    }
+                    .welcome {
+                        background: none;
+                        background-size: 100%;
+                        padding: 10px 0;
+                        width: 94%;
+                        h2 {
+                            font-size: 1.2em;
+                            padding: 10px 0 10px 0;
+                            border: none;
+                            border-top: none;
+                            i {
+                                color: #9f9f9f;
+                            }
+                        }
+                    }
+                    label {
+                        position: relative;
+                        font-size: 1.4em;
+                        a {
+                            float: right;
+                            font-size: 0.75em;
+                            font-weight: bold;
+                            color: #676767;
+                            border-bottom: 2px dotted #676767;
+                        }
+                        .pass {
+                            position: absolute;
+                            top: 55px;
+                            right: 20px;
+                        }
+                    }
+                    input {
+                        border-radius: 5px;
+                        height: 3.4125rem;
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1280px) {
+                .home {
+                    .icon {
+                        p {
+                            font-size: 0.9em;
+                        }
+                        small {
+                            font-size: 0.5em;
+                        }
+                    }
+                    #menu-certup {
+                        .left {
+                            li {
+                                a {
+                                    font-size: 0.8em;
+                                    padding: 0 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }

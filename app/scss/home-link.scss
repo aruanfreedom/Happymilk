@@ -1,0 +1,18 @@
+$purple: #9b41a5;
+$yellow: #fff4d6;
+$pink: #fbd6ff;
+$pink-dark: #d94289;
+$blue: #6a98ba;
+$red: #ec0f1e;
+$times: "Times New Roman", sans-serif;
+$tinos: 'Tinos',sans-serif;
+$yellow-dark: #ffe8d6;
+$small-custom: 640px;
+$grey-line: #c7c9d8;
+
+.home-link {
+  display: none;
+  @media only screen and (max-width: $small-custom - 1) {
+    display: block;
+  }
+}
